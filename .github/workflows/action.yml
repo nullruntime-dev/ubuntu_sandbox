@@ -27,6 +27,9 @@ jobs:
       with:
         context: .
         file: ./Dockerfile
+        
         push: true
         tags: ${{ secrets.DOCKER_HUB_USERNAME }}/ubuntu-systemd-sandbox:latest
+
+    
 

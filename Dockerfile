@@ -38,4 +38,5 @@ RUN rm -f /lib/systemd/system/multi-user.target.wants/* \
 RUN systemctl enable systemd-resolved || true
 
 VOLUME [ "/sys/fs/cgroup" ]
+EXPOSE 8080 8090 80 443 3000 3001 3002 3003 3004
 CMD ["/lib/systemd/systemd"]
